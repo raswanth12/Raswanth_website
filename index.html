@@ -10,18 +10,28 @@
 <!-- favicon (browser-tab icon) -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-<link rel="icon" href="favicon.ico" sizes="any" />
-<link rel="apple-touch-icon" href="favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
 
-  
+<link rel="canonical" href="https://raswanth12.github.io/Raswanth_website/" />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://raswanth12.github.io/Raswanth_website/" />
 <meta property="og:title" content="Raswanth CB — Solution Consultant" />
 <meta property="og:description" content="AI Infrastructure · Pre-Sales · Enterprise Solutions" />
-<meta property="og:image" content="raswanth.jpg" />
+<meta property="og:image" content="https://raswanth12.github.io/Raswanth_website/raswanth.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Raswanth CB — Solution Consultant" />
+<meta name="twitter:description" content="AI Infrastructure · Pre-Sales · Enterprise Solutions" />
+<meta name="twitter:image" content="https://raswanth12.github.io/Raswanth_website/raswanth.jpg" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Raswanth CB","jobTitle":"Technical Solutions Consultant","url":"https://raswanth12.github.io/Raswanth_website/","image":"https://raswanth12.github.io/Raswanth_website/raswanth.jpg","email":"mailto:raswanthcb@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/in/raswanth-cb-0250451b0/","https://github.com/raswanth12"],"knowsAbout":["AI Infrastructure","Solution Architecture","Pre-Sales Engineering","Machine Learning"]}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<script>document.documentElement.classList.add('js')</script>
 
 <style>
 /* ============ TOKENS ============ */
@@ -102,7 +112,11 @@ header.scrolled{background:rgba(11,10,9,.78);backdrop-filter:blur(14px);border-b
 .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ============ HERO ============ */
-.hero{min-height:100svh;display:flex;align-items:center;padding-top:6rem;position:relative}
+.hero{min-height:100svh;display:flex;align-items:center;padding-top:6rem;position:relative;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.85}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(130% 90% at 42% 42%,transparent 52%,var(--bg) 100%)}
+.hero .wrap{position:relative;z-index:2}
 .avail{
   display:inline-flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.72rem;
   letter-spacing:.12em;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;
@@ -242,13 +256,76 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 .foot a:hover{color:var(--accent)}
 
 /* ============ REVEAL ANIM ============ */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.reveal.in{opacity:1;transform:none}
+/* hidden state only when JS is running, so content is never invisible without it */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
 .reveal[data-d="1"]{transition-delay:.08s}
 .reveal[data-d="2"]{transition-delay:.16s}
 .reveal[data-d="3"]{transition-delay:.24s}
 .reveal[data-d="4"]{transition-delay:.32s}
 .reveal[data-d="5"]{transition-delay:.40s}
+
+/* ============ INTERFACE POLISH ============ */
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+body.no-scroll{overflow:hidden}
+
+/* scroll progress */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:60;pointer-events:none}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+
+/* cursor spotlight (desktop pointers only) */
+.spotlight{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .8s var(--ease);background:radial-gradient(560px circle at var(--mx,50%) var(--my,35%),rgba(212,163,90,.05),transparent 65%)}
+@media(pointer:fine){.spotlight.on{opacity:1}}
+
+/* scrollspy active nav link */
+.nav-links a.active{color:var(--ink)}
+.nav-links a.active::after{width:100%}
+
+/* primary button sheen */
+.btn{position:relative;overflow:hidden}
+.btn-primary::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .6s var(--ease)}
+.btn-primary:hover::after{left:130%}
+
+/* section index */
+.shead .idx{display:block;font-family:var(--mono);font-size:.72rem;font-weight:400;color:var(--muted);letter-spacing:.22em;margin-bottom:1.1rem}
+.shead .idx b{color:var(--accent);font-weight:400}
+
+/* experience timeline rail */
+.role{position:relative;padding-left:1.8rem}
+.role::before{content:"";position:absolute;left:0;top:3rem;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.role::after{content:"";position:absolute;left:4px;top:4rem;bottom:.4rem;width:1px;background:linear-gradient(var(--line),transparent)}
+.role:last-child::after{display:none}
+
+/* legibility + hover refinements */
+.chip{font-size:.7rem}
+.skillcol{transition:background .35s var(--ease)}
+.skillcol:hover{background:var(--panel-2)}
+.stat .num{font-variant-numeric:tabular-nums}
+.marquee:hover .track{animation-play-state:paused}
+
+/* ============ IMMERSIVE / INTERACTIVE ============ */
+/* custom cursor — desktop fine-pointer only */
+@media(pointer:fine){
+  html.has-cursor,html.has-cursor *{cursor:none}
+  .cur{position:fixed;top:0;left:0;z-index:9999;pointer-events:none;border-radius:50%;will-change:transform}
+  .cur-dot{width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--accent)}
+  .cur-ring{width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid rgba(239,233,224,.4);
+    transition:width .28s var(--ease),height .28s var(--ease),margin .28s var(--ease),border-color .28s,background .28s,opacity .28s}
+  .cur-ring.hov{width:58px;height:58px;margin:-29px 0 0 -29px;border-color:var(--accent);background:rgba(212,163,90,.07)}
+  .cur-ring.down{width:26px;height:26px;margin:-13px 0 0 -13px}
+}
+/* magnetic buttons — trailing pull toward cursor */
+.magnetic{will-change:transform}
+/* 3D tilt project cards */
+.pcard{will-change:transform;transition:transform .18s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease)}
+.pcard .glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s var(--ease);
+  background:radial-gradient(220px circle at var(--gx,50%) var(--gy,50%),rgba(233,193,136,.16),transparent 62%)}
+.pcard.tilting{box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.pcard.tilting .glare{opacity:1}
+/* kinetic heading — word-mask stagger reveal (padding/margin lets descenders show at rest) */
+.kin{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.16em;margin-bottom:-.16em}
+.kin>span{display:inline-block;transform:translateY(125%);transition:transform .85s var(--ease)}
+.js .reveal.in .kin>span{transform:none}
 
 /* ============ RESPONSIVE ============ */
 @media(max-width:980px){
@@ -281,6 +358,8 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 <div class="grain"></div>
 <div class="glow a"></div>
 <div class="glow b"></div>
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
 
 <!-- NAV -->
 <header id="header">
@@ -293,8 +372,8 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="mailto:raswanthcb@gmail.com" class="nav-cta">Get in Touch ↗</a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="mailto:raswanthcb@gmail.com" class="nav-cta magnetic">Get in Touch ↗</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </nav>
 </header>
 <div class="mobile-menu" id="mobileMenu">
@@ -307,14 +386,15 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 
 <!-- HERO -->
 <section class="hero" id="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="avail reveal"><span class="dot"></span> Available for new opportunities · Bengaluru, India</div>
-    <h1 class="reveal" data-d="1">Hello, I'm <em>Raswanth.</em></h1>
+    <h1 class="reveal" data-d="1">Hello, I'm <em data-decode>Raswanth.</em></h1>
     <p class="lead reveal" data-d="2"><b>Technical Solutions Consultant</b> specializing in enterprise AI infrastructure and pre-sales engineering — delivering <b>70+ enterprise demonstrations</b> with a <b>60% qualification rate</b>.</p>
     <div class="hero-actions reveal" data-d="3">
-      <a href="#experience" class="btn btn-primary">See My Work
+      <a href="#experience" class="btn btn-primary magnetic">See My Work
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      <a href="#contact" class="btn btn-ghost magnetic">Get in Touch</a>
     </div>
   </div>
   <div class="scroll-cue">Scroll<i></i></div>
@@ -338,7 +418,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 <section id="about">
   <div class="wrap">
     <div class="shead">
-      <h2 class="reveal">Where <em>AI</em> meets enterprise.</h2>
+      <h2 class="reveal"><span class="idx"><b>01</b> — ABOUT</span>Where <em>AI</em> meets enterprise.</h2>
       <p class="reveal" data-d="1">I bridge the gap between AI capability and business outcomes. From government RFPs to Phison joint-venture co-development, I translate technical complexity into measurable value — from initial discovery through technical win.</p>
     </div>
     <div class="about-grid">
@@ -380,7 +460,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 <section id="experience">
   <div class="wrap">
     <div class="shead">
-      <h2 class="reveal">Where I've <em>built.</em></h2>
+      <h2 class="reveal"><span class="idx"><b>02</b> — EXPERIENCE</span>Where I've <em>built.</em></h2>
       <p class="reveal" data-d="1">Three roles. One trajectory. From AI research to enterprise pre-sales.</p>
     </div>
     <div class="timeline">
@@ -437,7 +517,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 <section id="projects">
   <div class="wrap">
     <div class="shead">
-      <h2 class="reveal">Selected <em>work.</em></h2>
+      <h2 class="reveal"><span class="idx"><b>03</b> — PROJECTS</span>Selected <em>work.</em></h2>
       <p class="reveal" data-d="1">From autonomous driving research to enterprise government RFPs.</p>
     </div>
     <div class="projects">
@@ -488,7 +568,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 </section>
 
 <!-- MARQUEE -->
-<div class="marquee">
+<div class="marquee" aria-hidden="true">
   <div class="track">
     <span>Solution Architecture</span><span>PyTorch</span><span>Pre-Sales</span><span>AI Infrastructure</span><span>HubSpot CRM</span><span>Cloud</span><span>Python · SQL · Java</span>
     <span>Solution Architecture</span><span>PyTorch</span><span>Pre-Sales</span><span>AI Infrastructure</span><span>HubSpot CRM</span><span>Cloud</span><span>Python · SQL · Java</span>
@@ -499,7 +579,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 <section id="skills">
   <div class="wrap">
     <div class="shead">
-      <h2 class="reveal">Tools of the <em>trade.</em></h2>
+      <h2 class="reveal"><span class="idx"><b>04</b> — SKILLS</span>Tools of the <em>trade.</em></h2>
       <p class="reveal" data-d="1">A consulting toolkit spanning architecture, machine learning, infrastructure, and platforms.</p>
     </div>
     <div class="skills">
@@ -523,7 +603,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 
     <!-- CERTS -->
     <div class="shead">
-      <h2 class="reveal">Certified <em>expertise.</em></h2>
+      <h2 class="reveal"><span class="idx"><b>05</b> — CREDENTIALS</span>Certified <em>expertise.</em></h2>
       <p class="reveal" data-d="1">One earned. Three more on the path.</p>
     </div>
     <div class="certs">
@@ -596,14 +676,52 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
 </footer>
 
 <script>
-/* nav scroll state */
-const header=document.getElementById('header');
-addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>40),{passive:true});
+/* nav scroll state + progress bar */
+const header=document.getElementById('header'),progressBar=document.getElementById('progressBar');
+const onScroll=()=>{
+  header.classList.toggle('scrolled',scrollY>40);
+  const max=document.documentElement.scrollHeight-innerHeight;
+  progressBar.style.width=(max>0?Math.min(scrollY/max*100,100):0)+'%';
+};
+addEventListener('scroll',onScroll,{passive:true});
+onScroll();
 
 /* mobile menu */
 const burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu');
-burger.addEventListener('click',()=>{burger.classList.toggle('open');menu.classList.toggle('open');});
-menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');menu.classList.remove('open');}));
+const setMenu=(open)=>{
+  burger.classList.toggle('open',open);
+  menu.classList.toggle('open',open);
+  burger.setAttribute('aria-expanded',open);
+  document.body.classList.toggle('no-scroll',open);
+};
+burger.addEventListener('click',()=>setMenu(!menu.classList.contains('open')));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+/* scrollspy — highlight the nav link of the section in view */
+const spyLinks=[...document.querySelectorAll('.nav-links a[href^="#"]')];
+const spy=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting)spyLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
+  });
+},{rootMargin:'-40% 0px -55% 0px'});
+spyLinks.forEach(a=>{const s=document.querySelector(a.getAttribute('href'));if(s)spy.observe(s)});
+spy.observe(document.getElementById('hero')); /* clears highlight back at the top */
+
+/* cursor spotlight (desktop pointers only) */
+const spot=document.getElementById('spotlight');
+if(matchMedia('(pointer:fine)').matches){
+  let raf=null;
+  addEventListener('mousemove',e=>{
+    spot.classList.add('on');
+    if(raf)return;
+    raf=requestAnimationFrame(()=>{
+      spot.style.setProperty('--mx',e.clientX+'px');
+      spot.style.setProperty('--my',e.clientY+'px');
+      raf=null;
+    });
+  },{passive:true});
+}
 
 /* reveal on scroll */
 const io=new IntersectionObserver((es)=>{
@@ -628,6 +746,137 @@ const co=new IntersectionObserver((es)=>{
   });
 },{threshold:.6});
 document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+/* ============ IMMERSIVE / INTERACTIVE ============ */
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const FINE=matchMedia('(pointer:fine)').matches;
+
+/* — custom cursor (dot tracks precisely, ring lerps behind) — */
+if(FINE && !RM){
+  const dot=document.createElement('div'); dot.className='cur cur-dot';
+  const ring=document.createElement('div'); ring.className='cur cur-ring';
+  document.body.append(dot,ring);
+  document.documentElement.classList.add('has-cursor');
+  let rx=innerWidth/2,ry=innerHeight/2,tx=rx,ty=ry;
+  addEventListener('mousemove',e=>{
+    tx=e.clientX;ty=e.clientY;
+    dot.style.transform=`translate(${tx}px,${ty}px)`;
+  },{passive:true});
+  (function loop(){rx+=(tx-rx)*.2;ry+=(ty-ry)*.2;ring.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(loop);})();
+  document.querySelectorAll('a,button,.btn,.pcard,.acard,.cert,.clink,.chip').forEach(t=>{
+    t.addEventListener('mouseenter',()=>ring.classList.add('hov'));
+    t.addEventListener('mouseleave',()=>ring.classList.remove('hov'));
+  });
+  addEventListener('mousedown',()=>ring.classList.add('down'));
+  addEventListener('mouseup',()=>ring.classList.remove('down'));
+  addEventListener('mouseleave',()=>{dot.style.opacity=ring.style.opacity=0;});
+  addEventListener('mouseenter',()=>{dot.style.opacity=ring.style.opacity=1;});
+}
+
+/* — magnetic buttons — */
+if(FINE && !RM){
+  document.querySelectorAll('.magnetic').forEach(m=>{
+    const strength=.4;
+    m.addEventListener('mousemove',e=>{
+      const b=m.getBoundingClientRect();
+      m.style.transform=`translate(${(e.clientX-(b.left+b.width/2))*strength}px,${(e.clientY-(b.top+b.height/2))*strength}px)`;
+    });
+    m.addEventListener('mouseleave',()=>{m.style.transform='';});
+  });
+}
+
+/* — 3D tilt project cards — */
+if(FINE && !RM){
+  document.querySelectorAll('.pcard').forEach(c=>{
+    const g=document.createElement('div'); g.className='glare'; c.prepend(g);
+    const max=7;
+    c.addEventListener('mousemove',e=>{
+      const b=c.getBoundingClientRect(),px=(e.clientX-b.left)/b.width,py=(e.clientY-b.top)/b.height;
+      c.style.transform=`perspective(1000px) rotateX(${(.5-py)*max*2}deg) rotateY(${(px-.5)*max*2}deg) translateY(-6px)`;
+      g.style.setProperty('--gx',px*100+'%'); g.style.setProperty('--gy',py*100+'%');
+      c.classList.add('tilting');
+    });
+    c.addEventListener('mouseleave',()=>{c.style.transform='';c.classList.remove('tilting');});
+  });
+}
+
+/* — hero name decode/scramble — */
+(()=>{
+  const em=document.querySelector('[data-decode]'); if(!em||RM)return;
+  const final=em.textContent, chars='ABCDEFGHKMNPRSTVWXZ#%&/<>{}[]010', keep=c=>c===' '||c==='.';
+  let f=0;
+  const run=()=>{
+    let out='';
+    for(let i=0;i<final.length;i++) out+= keep(final[i]) ? final[i] : (i<f/2.4 ? final[i] : chars[Math.random()*chars.length|0]);
+    em.textContent=out; f++;
+    if(f/2.4<final.length) setTimeout(run,34); else em.textContent=final;
+  };
+  setTimeout(run,420);
+})();
+
+/* — kinetic headings — split into word-masks (preserves <em>/<span> children) — */
+(()=>{
+  if(RM)return;
+  const split=root=>{
+    [...root.childNodes].forEach(node=>{
+      if(node.nodeType===3){ /* text → wrap each word in a mask */
+        const frag=document.createDocumentFragment();
+        node.textContent.split(/(\s+)/).forEach(tok=>{
+          if(tok.trim()===''){frag.append(tok);return;}
+          const mask=document.createElement('span'); mask.className='kin';
+          const inner=document.createElement('span'); inner.textContent=tok;
+          mask.append(inner); frag.append(mask);
+        });
+        node.replaceWith(frag);
+      }else if(node.nodeType===1 && !node.classList.contains('idx') && !node.hasAttribute('data-decode')){ /* recurse into <em> etc. */
+        split(node);
+      }
+    });
+  };
+  document.querySelectorAll('.shead h2,.contact h2').forEach(h=>{
+    split(h);
+    /* stagger the reveal of each word */
+    h.querySelectorAll('.kin>span').forEach((s,i)=>s.style.transitionDelay=(i*.05)+'s');
+  });
+})();
+
+/* — living neural-network hero canvas (AI-infrastructure motif) — */
+(()=>{
+  const cv=document.getElementById('net'); if(!cv||RM)return;
+  const ctx=cv.getContext('2d');
+  let w=0,h=0,dpr=1,nodes=[],mouse={x:-999,y:-999},raf=0,running=false;
+  const count=()=>Math.min(Math.round(innerWidth/24),68);
+  const resize=()=>{dpr=Math.min(devicePixelRatio||1,2);const r=cv.getBoundingClientRect();w=r.width;h=r.height;cv.width=w*dpr;cv.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);};
+  const init=()=>{resize();nodes=[];for(let i=0,n=count();i<n;i++)nodes.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22});};
+  const step=()=>{
+    ctx.clearRect(0,0,w,h);
+    for(let i=0;i<nodes.length;i++){
+      const a=nodes[i];
+      a.x+=a.vx;a.y+=a.vy;
+      if(a.x<0||a.x>w)a.vx*=-1; if(a.y<0||a.y>h)a.vy*=-1;
+      for(let j=i+1;j<nodes.length;j++){
+        const b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
+        if(d<128){ctx.strokeStyle='rgba(212,163,90,'+(1-d/128)*.16+')';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
+      }
+      const mdx=a.x-mouse.x,mdy=a.y-mouse.y,md=Math.hypot(mdx,mdy);
+      if(md<170){
+        ctx.strokeStyle='rgba(233,193,136,'+(1-md/170)*.45+')';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(mouse.x,mouse.y);ctx.stroke();
+        a.vx+=(mouse.x-a.x)*4e-5;a.vy+=(mouse.y-a.y)*4e-5;
+      }
+      a.vx=Math.max(-.6,Math.min(.6,a.vx));a.vy=Math.max(-.6,Math.min(.6,a.vy));
+    }
+    ctx.fillStyle='rgba(233,193,136,.5)';
+    for(const p of nodes){ctx.beginPath();ctx.arc(p.x,p.y,1.5,0,7);ctx.fill();}
+    raf=requestAnimationFrame(step);
+  };
+  const start=()=>{if(!running){running=true;step();}};
+  const stop=()=>{running=false;cancelAnimationFrame(raf);};
+  addEventListener('mousemove',e=>{const r=cv.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;},{passive:true});
+  addEventListener('mouseout',()=>{mouse.x=mouse.y=-999;});
+  let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{init();if(running){running=false;start();}},200);});
+  init(); start();
+  new IntersectionObserver(es=>{es[0].isIntersecting?start():stop();},{threshold:0}).observe(document.getElementById('hero'));
+})();
 </script>
 </body>
 </html>
