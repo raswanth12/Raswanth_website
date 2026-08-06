@@ -1,882 +1,757 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Raswanth CB — Solution Consultant · Built for Enterprise AI</title>
-<meta name="description" content="Technical Solutions Consultant specializing in enterprise AI infrastructure and pre-sales engineering. 70+ enterprise demonstrations, 60% qualification rate. Available for opportunities at Google, Microsoft, Salesforce, AWS and beyond." />
-<meta name="theme-color" content="#0b0a09" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raswanth CB — Solution Consultant · Enterprise AI Infrastructure</title>
 
-<!-- favicon (browser-tab icon) -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
+<meta name="description" content="Solution Consultant and pre-sales engineer specializing in enterprise AI infrastructure. 70+ enterprise demonstrations, 60% qualification rate, government telecom RFP architecture. Based in Bengaluru, India.">
+<meta name="author" content="Raswanth CB">
+<meta name="theme-color" content="#08080b">
+<link rel="canonical" href="https://raswanth12.github.io/Raswanth_website/">
 
-<link rel="canonical" href="https://raswanth12.github.io/Raswanth_website/" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://raswanth12.github.io/Raswanth_website/" />
-<meta property="og:title" content="Raswanth CB — Solution Consultant" />
-<meta property="og:description" content="AI Infrastructure · Pre-Sales · Enterprise Solutions" />
-<meta property="og:image" content="https://raswanth12.github.io/Raswanth_website/raswanth.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Raswanth CB — Solution Consultant" />
-<meta name="twitter:description" content="AI Infrastructure · Pre-Sales · Enterprise Solutions" />
-<meta name="twitter:image" content="https://raswanth12.github.io/Raswanth_website/raswanth.jpg" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raswanth CB — Solution Consultant · Enterprise AI Infrastructure">
+<meta property="og:description" content="I turn enterprise AI capability into technical wins — discovery, architecture, proof-of-concept and the close.">
+<meta property="og:url" content="https://raswanth12.github.io/Raswanth_website/">
+<meta property="og:image" content="https://raswanth12.github.io/Raswanth_website/assets/img/raswanth.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raswanth CB — Solution Consultant">
+<meta name="twitter:description" content="Enterprise AI infrastructure · Pre-sales engineering · Solution architecture">
+<meta name="twitter:image" content="https://raswanth12.github.io/Raswanth_website/assets/img/raswanth.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Raswanth CB","jobTitle":"Technical Solutions Consultant","url":"https://raswanth12.github.io/Raswanth_website/","image":"https://raswanth12.github.io/Raswanth_website/raswanth.jpg","email":"mailto:raswanthcb@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/in/raswanth-cb-0250451b0/","https://github.com/raswanth12"],"knowsAbout":["AI Infrastructure","Solution Architecture","Pre-Sales Engineering","Machine Learning"]}
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raswanth CB",
+  "jobTitle": "Solution Consultant & Pre-Sales Engineer",
+  "email": "mailto:raswanthcb@gmail.com",
+  "url": "https://raswanth12.github.io/Raswanth_website/",
+  "image": "https://raswanth12.github.io/Raswanth_website/assets/img/raswanth.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+  "worksFor": { "@type": "Organization", "name": "MiPhi Semiconductors" },
+  "knowsAbout": ["Solution Architecture","Pre-Sales Engineering","Enterprise AI Infrastructure","HPC","NVMe Storage","PyTorch","Computer Vision","HubSpot CRM","RFP Response"],
+  "sameAs": ["https://www.linkedin.com/in/raswanth-cb","https://github.com/raswanth12"]
+}
 </script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-<script>document.documentElement.classList.add('js')</script>
-
-<style>
-/* ============ TOKENS ============ */
-:root{
-  --bg:#0b0a09;
-  --bg-2:#100e0c;
-  --panel:#15120f;
-  --panel-2:#1b1714;
-  --ink:#efe9e0;
-  --ink-2:#cdc6bb;
-  --muted:#928a7e;
-  --faint:#26221d;
-  --line:rgba(239,233,224,.10);
-  --line-2:rgba(239,233,224,.06);
-  --accent:#d4a35a;
-  --accent-2:#e9c188;
-  --accent-soft:rgba(212,163,90,.10);
-  --maxw:1180px;
-  --ease:cubic-bezier(.22,.61,.36,1);
-  --serif:"Fraunces",Georgia,serif;
-  --sans:"Hanken Grotesk",-apple-system,sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,monospace;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family:var(--sans);
-  font-weight:400;
-  line-height:1.6;
-  overflow-x:hidden;
-  letter-spacing:.005em;
-}
-::selection{background:var(--accent);color:#0b0a09}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-section{scroll-margin-top:90px}
-
-/* ============ ATMOSPHERE ============ */
-.grain{
-  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.045;mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-.glow{position:fixed;border-radius:50%;filter:blur(120px);z-index:0;pointer-events:none;opacity:.5}
-.glow.a{width:480px;height:480px;background:radial-gradient(circle,rgba(212,163,90,.12),transparent 70%);top:-140px;right:-120px}
-.glow.b{width:420px;height:420px;background:radial-gradient(circle,rgba(120,140,170,.07),transparent 70%);top:60%;left:-160px}
-
-/* ============ LAYOUT ============ */
-.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem);position:relative;z-index:2}
-.eyebrow{
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--accent);display:inline-flex;align-items:center;gap:.6rem;
-}
-.eyebrow::before{content:"";width:1.6rem;height:1px;background:var(--accent);opacity:.6}
-
-/* ============ NAV ============ */
-header{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .4s var(--ease)}
-header.scrolled{background:rgba(11,10,9,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-2)}
-.nav{max-width:var(--maxw);margin-inline:auto;padding:1.1rem clamp(1.25rem,4vw,2.5rem);display:flex;align-items:center;justify-content:space-between}
-.brand{font-family:var(--mono);font-size:.82rem;letter-spacing:.18em;color:var(--ink);font-weight:500}
-.brand span{color:var(--accent)}
-.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
-.nav-links a{font-size:.86rem;color:var(--ink-2);position:relative;transition:color .25s}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--accent);transition:width .3s var(--ease)}
-.nav-links a:hover{color:var(--ink)}
-.nav-links a:hover::after{width:100%}
-.nav-cta{
-  font-family:var(--mono);font-size:.76rem;letter-spacing:.05em;
-  border:1px solid var(--line);padding:.6rem 1.1rem;border-radius:999px;color:var(--ink);
-  transition:all .3s var(--ease)
-}
-.nav-cta:hover{background:var(--accent);color:#0b0a09;border-color:var(--accent)}
-.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
-.burger span{width:24px;height:2px;background:var(--ink);transition:.3s var(--ease)}
-.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.burger.open span:nth-child(2){opacity:0}
-.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-/* ============ HERO ============ */
-.hero{min-height:100svh;display:flex;align-items:center;padding-top:6rem;position:relative;overflow:hidden}
-#net{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.85}
-.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:radial-gradient(130% 90% at 42% 42%,transparent 52%,var(--bg) 100%)}
-.hero .wrap{position:relative;z-index:2}
-.avail{
-  display:inline-flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.72rem;
-  letter-spacing:.12em;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;
-  padding:.45rem .9rem;margin-bottom:2.2rem;background:rgba(255,255,255,.015)
-}
-.dot{width:7px;height:7px;border-radius:50%;background:#5bd07f;box-shadow:0 0 0 0 rgba(91,208,127,.5);animation:pulse 2.4s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(91,208,127,.5)}70%{box-shadow:0 0 0 8px rgba(91,208,127,0)}100%{box-shadow:0 0 0 0 rgba(91,208,127,0)}}
-.hero h1{
-  font-family:var(--serif);font-weight:340;font-size:clamp(2.9rem,8.5vw,6.6rem);line-height:.98;
-  letter-spacing:-.02em;margin-bottom:1.8rem;max-width:14ch
-}
-.hero h1 em{font-style:italic;color:var(--accent)}
-.hero .lead{font-size:clamp(1.05rem,1.9vw,1.32rem);color:var(--ink-2);max-width:46ch;font-weight:300;line-height:1.55}
-.hero .lead b{color:var(--ink);font-weight:600}
-.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.6rem}
-.btn{
-  display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;
-  font-size:.92rem;font-weight:500;transition:all .35s var(--ease);cursor:pointer;border:1px solid transparent
-}
-.btn-primary{background:var(--accent);color:#0b0a09}
-.btn-primary:hover{background:var(--accent-2);transform:translateY(-2px)}
-.btn-ghost{border-color:var(--line);color:var(--ink)}
-.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
-.btn svg{width:15px;height:15px}
-.scroll-cue{
-  position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);font-family:var(--mono);
-  font-size:.66rem;letter-spacing:.25em;color:var(--muted);text-transform:uppercase;
-  display:flex;flex-direction:column;align-items:center;gap:.7rem
-}
-.scroll-cue i{width:1px;height:38px;background:linear-gradient(var(--accent),transparent);animation:drop 2s infinite}
-@keyframes drop{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(.2);transform-origin:bottom}}
-
-/* ============ STATS BAND ============ */
-.stats-band{border-block:1px solid var(--line);background:linear-gradient(180deg,var(--bg-2),var(--bg))}
-.mission{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,3.2vw,2.2rem);font-weight:320;color:var(--ink);max-width:24ch;line-height:1.2;padding:3.4rem 0 1rem}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2);border-top:1px solid var(--line);margin-top:2.4rem}
-.stat{background:var(--bg);padding:2.4rem clamp(1rem,2vw,2rem)}
-.stat .num{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:380;letter-spacing:-.02em;color:var(--accent);line-height:1}
-.stat .lbl{font-size:.84rem;color:var(--muted);margin-top:.7rem;max-width:22ch;line-height:1.4}
-
-/* ============ SECTION HEAD ============ */
-.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;padding-block:5.5rem 3rem;flex-wrap:wrap}
-.shead h2{font-family:var(--serif);font-weight:330;font-size:clamp(2.1rem,5.5vw,3.5rem);line-height:1.02;letter-spacing:-.02em;max-width:16ch}
-.shead h2 em{font-style:italic;color:var(--accent)}
-.shead p{color:var(--muted);max-width:34ch;font-size:.96rem;font-weight:300}
-
-/* ============ ABOUT ============ */
-.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;padding-bottom:2rem}
-.portrait{position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
-.portrait img{width:100%;filter:grayscale(100%) contrast(1.04);transition:filter .6s var(--ease),transform 1.2s var(--ease)}
-.portrait:hover img{filter:grayscale(0%) contrast(1.02);transform:scale(1.03)}
-.portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(11,10,9,.55));pointer-events:none}
-.portrait .tag{position:absolute;left:1rem;bottom:1rem;z-index:2;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--ink);background:rgba(11,10,9,.5);backdrop-filter:blur(6px);border:1px solid var(--line);padding:.5rem .8rem;border-radius:6px}
-.portrait .tag b{color:var(--accent)}
-.about-cards{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line);border-radius:6px;overflow:hidden}
-.acard{background:var(--panel);padding:1.7rem 1.5rem;transition:background .35s var(--ease)}
-.acard:hover{background:var(--panel-2)}
-.acard .n{font-family:var(--mono);font-size:.72rem;color:var(--accent);letter-spacing:.1em}
-.acard h3{font-family:var(--serif);font-weight:420;font-size:1.18rem;margin:.7rem 0 .55rem;letter-spacing:-.01em}
-.acard p{font-size:.85rem;color:var(--ink-2);font-weight:300;line-height:1.5}
-.acard .chips{margin-top:.95rem;display:flex;flex-wrap:wrap;gap:.4rem}
-.chip{font-family:var(--mono);font-size:.66rem;color:var(--muted);border:1px solid var(--line);padding:.22rem .5rem;border-radius:4px;letter-spacing:.04em}
-
-/* ============ EXPERIENCE ============ */
-.timeline{display:flex;flex-direction:column}
-.role{display:grid;grid-template-columns:.42fr 1.58fr;gap:clamp(1rem,4vw,3.5rem);padding:2.6rem 0;border-top:1px solid var(--line);transition:.4s var(--ease)}
-.role:hover{background:linear-gradient(90deg,var(--accent-soft),transparent 40%)}
-.role .when{font-family:var(--mono);font-size:.78rem;color:var(--accent);letter-spacing:.05em}
-.role .where{color:var(--muted);font-size:.82rem;margin-top:.5rem}
-.role h3{font-family:var(--serif);font-weight:430;font-size:1.5rem;letter-spacing:-.01em;margin-bottom:.2rem}
-.role .what{color:var(--ink-2);font-size:.95rem;margin-bottom:1.1rem;font-weight:300}
-.role ul{list-style:none;display:flex;flex-direction:column;gap:.75rem}
-.role li{position:relative;padding-left:1.4rem;font-size:.93rem;color:var(--ink-2);font-weight:300;line-height:1.5}
-.role li::before{content:"›";position:absolute;left:0;color:var(--accent);font-size:1.05rem;top:-1px}
-.role li b{color:var(--ink);font-weight:600}
-.metrics{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.3rem}
-.metric{font-family:var(--mono);font-size:.72rem;color:var(--accent);background:var(--accent-soft);border:1px solid rgba(212,163,90,.2);padding:.35rem .65rem;border-radius:5px}
-
-/* ============ PROJECTS ============ */
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-.pcard{
-  background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1.7rem 1.5rem;
-  display:flex;flex-direction:column;min-height:280px;transition:.4s var(--ease);position:relative;overflow:hidden
-}
-.pcard::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 100% 0%,var(--accent-soft),transparent 55%);opacity:0;transition:opacity .4s}
-.pcard:hover{transform:translateY(-5px);border-color:rgba(212,163,90,.35)}
-.pcard:hover::before{opacity:1}
-.pcard .n{font-family:var(--mono);font-size:.72rem;color:var(--accent)}
-.pcard h3{font-family:var(--serif);font-weight:430;font-size:1.32rem;line-height:1.1;margin:.7rem 0 .8rem;letter-spacing:-.01em}
-.pcard h3 small{display:block;font-family:var(--sans);font-size:.74rem;color:var(--muted);font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-top:.4rem}
-.pcard p{font-size:.86rem;color:var(--ink-2);font-weight:300;line-height:1.5;flex:1}
-.pcard .res{font-family:var(--mono);font-size:.72rem;color:var(--accent-2);margin:1rem 0 .9rem;line-height:1.4}
-.pcard .chips{display:flex;flex-wrap:wrap;gap:.4rem}
-
-/* ============ MARQUEE ============ */
-.marquee{border-block:1px solid var(--line);overflow:hidden;padding:1.6rem 0;background:var(--bg-2);margin-top:1rem}
-.track{display:flex;gap:3rem;width:max-content;animation:slide 28s linear infinite}
-.track span{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--ink-2);white-space:nowrap;display:flex;align-items:center;gap:3rem}
-.track span::after{content:"✦";color:var(--accent);font-style:normal;font-size:.8rem}
-@keyframes slide{to{transform:translateX(-50%)}}
-
-/* ============ SKILLS ============ */
-.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.skillcol{background:var(--panel);padding:1.8rem 1.5rem}
-.skillcol h4{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--line)}
-.skillcol ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
-.skillcol li{font-size:.9rem;color:var(--ink-2);font-weight:300}
-
-/* ============ CERTS ============ */
-.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
-.cert{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1.6rem;display:flex;gap:1.2rem;align-items:flex-start;transition:.35s var(--ease)}
-.cert:hover{border-color:rgba(212,163,90,.3);background:var(--panel-2)}
-.cert .ic{font-size:1.5rem;line-height:1;flex-shrink:0;width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
-.cert h3{font-family:var(--serif);font-weight:430;font-size:1.14rem;letter-spacing:-.01em}
-.cert .org{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted);margin:.35rem 0 .7rem;text-transform:uppercase}
-.cert p{font-size:.84rem;color:var(--ink-2);font-weight:300;line-height:1.45}
-.badge{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;padding:.3rem .55rem;border-radius:999px;margin-top:.9rem;display:inline-block}
-.badge.earned{background:rgba(91,208,127,.12);color:#7ed79a;border:1px solid rgba(91,208,127,.25)}
-.badge.prog{background:var(--accent-soft);color:var(--accent-2);border:1px solid rgba(212,163,90,.25)}
-.badge.plan{background:rgba(239,233,224,.05);color:var(--muted);border:1px solid var(--line)}
-
-/* ============ CONTACT ============ */
-.contact{padding-block:6rem 4rem;text-align:center;position:relative}
-.contact h2{font-family:var(--serif);font-weight:330;font-size:clamp(2.4rem,7vw,5rem);line-height:1;letter-spacing:-.025em;margin:1.4rem 0}
-.contact h2 em{font-style:italic;color:var(--accent)}
-.contact p{color:var(--ink-2);max-width:48ch;margin:0 auto 2.6rem;font-weight:300;font-size:1.05rem}
-.contact-links{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
-.clink{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.5rem;border:1px solid var(--line);border-radius:999px;font-size:.9rem;color:var(--ink);transition:.35s var(--ease)}
-.clink:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.clink.mail{background:var(--accent);color:#0b0a09;border-color:var(--accent)}
-.clink.mail:hover{background:var(--accent-2);color:#0b0a09}
-.clink svg{width:16px;height:16px}
-
-/* ============ FOOTER ============ */
-footer{border-top:1px solid var(--line);padding:2.2rem 0;background:var(--bg-2)}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--muted)}
-.foot a:hover{color:var(--accent)}
-
-/* ============ REVEAL ANIM ============ */
-/* hidden state only when JS is running, so content is never invisible without it */
-.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.js .reveal.in{opacity:1;transform:none}
-.reveal[data-d="1"]{transition-delay:.08s}
-.reveal[data-d="2"]{transition-delay:.16s}
-.reveal[data-d="3"]{transition-delay:.24s}
-.reveal[data-d="4"]{transition-delay:.32s}
-.reveal[data-d="5"]{transition-delay:.40s}
-
-/* ============ INTERFACE POLISH ============ */
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-body.no-scroll{overflow:hidden}
-
-/* scroll progress */
-.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:60;pointer-events:none}
-.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
-
-/* cursor spotlight (desktop pointers only) */
-.spotlight{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .8s var(--ease);background:radial-gradient(560px circle at var(--mx,50%) var(--my,35%),rgba(212,163,90,.05),transparent 65%)}
-@media(pointer:fine){.spotlight.on{opacity:1}}
-
-/* scrollspy active nav link */
-.nav-links a.active{color:var(--ink)}
-.nav-links a.active::after{width:100%}
-
-/* primary button sheen */
-.btn{position:relative;overflow:hidden}
-.btn-primary::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .6s var(--ease)}
-.btn-primary:hover::after{left:130%}
-
-/* section index */
-.shead .idx{display:block;font-family:var(--mono);font-size:.72rem;font-weight:400;color:var(--muted);letter-spacing:.22em;margin-bottom:1.1rem}
-.shead .idx b{color:var(--accent);font-weight:400}
-
-/* experience timeline rail */
-.role{position:relative;padding-left:1.8rem}
-.role::before{content:"";position:absolute;left:0;top:3rem;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
-.role::after{content:"";position:absolute;left:4px;top:4rem;bottom:.4rem;width:1px;background:linear-gradient(var(--line),transparent)}
-.role:last-child::after{display:none}
-
-/* legibility + hover refinements */
-.chip{font-size:.7rem}
-.skillcol{transition:background .35s var(--ease)}
-.skillcol:hover{background:var(--panel-2)}
-.stat .num{font-variant-numeric:tabular-nums}
-.marquee:hover .track{animation-play-state:paused}
-
-/* ============ IMMERSIVE / INTERACTIVE ============ */
-/* custom cursor — desktop fine-pointer only */
-@media(pointer:fine){
-  html.has-cursor,html.has-cursor *{cursor:none}
-  .cur{position:fixed;top:0;left:0;z-index:9999;pointer-events:none;border-radius:50%;will-change:transform}
-  .cur-dot{width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--accent)}
-  .cur-ring{width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid rgba(239,233,224,.4);
-    transition:width .28s var(--ease),height .28s var(--ease),margin .28s var(--ease),border-color .28s,background .28s,opacity .28s}
-  .cur-ring.hov{width:58px;height:58px;margin:-29px 0 0 -29px;border-color:var(--accent);background:rgba(212,163,90,.07)}
-  .cur-ring.down{width:26px;height:26px;margin:-13px 0 0 -13px}
-}
-/* magnetic buttons — trailing pull toward cursor */
-.magnetic{will-change:transform}
-/* 3D tilt project cards */
-.pcard{will-change:transform;transition:transform .18s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease)}
-.pcard .glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s var(--ease);
-  background:radial-gradient(220px circle at var(--gx,50%) var(--gy,50%),rgba(233,193,136,.16),transparent 62%)}
-.pcard.tilting{box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
-.pcard.tilting .glare{opacity:1}
-/* kinetic heading — word-mask stagger reveal (padding/margin lets descenders show at rest) */
-.kin{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.16em;margin-bottom:-.16em}
-.kin>span{display:inline-block;transform:translateY(125%);transition:transform .85s var(--ease)}
-.js .reveal.in .kin>span{transform:none}
-
-/* ============ RESPONSIVE ============ */
-@media(max-width:980px){
-  .about-grid{grid-template-columns:1fr}
-  .portrait{max-width:420px}
-  .projects{grid-template-columns:repeat(2,1fr)}
-  .skills{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:720px){
-  .nav-links,.nav-cta{display:none}
-  .burger{display:flex}
-  .mobile-menu{position:fixed;inset:0;z-index:45;background:rgba(11,10,9,.97);backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
-  .mobile-menu.open{opacity:1;pointer-events:auto}
-  .mobile-menu a{font-family:var(--serif);font-size:1.8rem;color:var(--ink)}
-  .mobile-menu a:hover{color:var(--accent)}
-  .stats{grid-template-columns:1fr 1fr}
-  .role{grid-template-columns:1fr;gap:1rem}
-  .projects,.certs,.skills{grid-template-columns:1fr}
-  .about-cards{grid-template-columns:1fr}
-  .shead{padding-block:4rem 2.4rem}
-}
-@media(min-width:721px){.mobile-menu{display:none}}
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  .reveal{opacity:1;transform:none}
-}
-</style>
 </head>
+
 <body>
-<div class="grain"></div>
-<div class="glow a"></div>
-<div class="glow b"></div>
-<div class="spotlight" id="spotlight" aria-hidden="true"></div>
-<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
 
-<!-- NAV -->
-<header id="header">
-  <nav class="nav">
-    <a href="#hero" class="brand">RASWANTH<span>.CB</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="mailto:raswanthcb@gmail.com" class="nav-cta magnetic">Get in Touch ↗</a>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══════════════ PRELOADER ══════════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__name">
+      <span>R</span><span>A</span><span>S</span><span>W</span><span>A</span><span>N</span><span>T</span><span>H</span>
+    </div>
+    <div class="loader__meta">
+      <span class="loader__label">Solution Consultant</span>
+      <span class="loader__count" id="loaderCount">0</span>
+    </div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+</div>
+
+<!-- ══════════════ ATMOSPHERE ══════════════ -->
+<div class="aurora" aria-hidden="true">
+  <span class="aurora__blob aurora__blob--a"></span>
+  <span class="aurora__blob aurora__blob--b"></span>
+  <span class="aurora__blob aurora__blob--c"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="header" id="header">
+  <a class="brand" href="#hero">
+    <span class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <path d="M4 20V5h6.5a4.5 4.5 0 0 1 0 9H4"/><path d="M11 14l6 6"/>
+      </svg>
+    </span>
+    <span class="brand__text">RASWANTH<em>.CB</em></span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#method">Method</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#credentials">Credentials</a>
+    <span class="nav__pill" id="navPill" aria-hidden="true"></span>
   </nav>
+
+  <div class="header__actions">
+    <button class="btn btn--ghost btn--sm" type="button" data-resume>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+      Resume
+    </button>
+    <a class="btn btn--solid btn--sm" href="#contact">Get in touch</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+  </div>
 </header>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
-</div>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-  <canvas id="net" aria-hidden="true"></canvas>
-  <div class="wrap">
-    <div class="avail reveal"><span class="dot"></span> Available for new opportunities · Bengaluru, India</div>
-    <h1 class="reveal" data-d="1">Hello, I'm <em data-decode>Raswanth.</em></h1>
-    <p class="lead reveal" data-d="2"><b>Technical Solutions Consultant</b> specializing in enterprise AI infrastructure and pre-sales engineering — delivering <b>70+ enterprise demonstrations</b> with a <b>60% qualification rate</b>.</p>
-    <div class="hero-actions reveal" data-d="3">
-      <a href="#experience" class="btn btn-primary magnetic">See My Work
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="#contact" class="btn btn-ghost magnetic">Get in Touch</a>
-    </div>
-  </div>
-  <div class="scroll-cue">Scroll<i></i></div>
-</section>
-
-<!-- STATS -->
-<section class="stats-band">
-  <div class="wrap">
-    <span class="eyebrow reveal">Mission</span>
-    <p class="mission reveal" data-d="1">Built for AI. Built for Enterprise. Built for impact.</p>
-    <div class="stats">
-      <div class="stat reveal" data-d="1"><div class="num" data-count="70" data-suffix="+">0</div><div class="lbl">Enterprise solution demonstrations delivered</div></div>
-      <div class="stat reveal" data-d="2"><div class="num" data-count="60" data-suffix="%">0</div><div class="lbl">Opportunity qualification rate through structured discovery</div></div>
-      <div class="stat reveal" data-d="3"><div class="num" data-count="25" data-suffix="%">0</div><div class="lbl">Partner-driven pipeline growth at MiPhi Semiconductors</div></div>
-      <div class="stat reveal" data-d="4"><div class="num" data-count="40" data-suffix="%">0</div><div class="lbl">CRM efficiency uplift via automation workflows</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="shead">
-      <h2 class="reveal"><span class="idx"><b>01</b> — ABOUT</span>Where <em>AI</em> meets enterprise.</h2>
-      <p class="reveal" data-d="1">I bridge the gap between AI capability and business outcomes. From government RFPs to Phison joint-venture co-development, I translate technical complexity into measurable value — from initial discovery through technical win.</p>
-    </div>
-    <div class="about-grid">
-      <div class="portrait reveal">
-        <img src="raswanth.jpg" alt="Raswanth CB" loading="lazy" />
-        <div class="tag">RASWANTH CB · <b>Solution Consultant</b></div>
-      </div>
-      <div class="about-cards reveal" data-d="1">
-        <div class="acard">
-          <div class="n">— 01</div>
-          <h3>AI Infrastructure</h3>
-          <p>Designing enterprise-grade AI deployments across cloud and on-prem environments — HPC, NVMe, and AI storage architecture for production workloads.</p>
-          <div class="chips"><span class="chip">PyTorch</span><span class="chip">Cloud</span><span class="chip">HPC</span></div>
-        </div>
-        <div class="acard">
-          <div class="n">— 02</div>
-          <h3>Solution Architecture</h3>
-          <p>End-to-end enterprise solution design — RFP responses, PoC development, and technical proposal authoring for government and enterprise clients.</p>
-          <div class="chips"><span class="chip">Architecture</span><span class="chip">RFP</span><span class="chip">PoC</span></div>
-        </div>
-        <div class="acard">
-          <div class="n">— 03</div>
-          <h3>Pre-Sales &amp; GTM</h3>
-          <p>Technical sales strategy, partner relationship management, pipeline orchestration, and CXO-level executive stakeholder engagement.</p>
-          <div class="chips"><span class="chip">Pre-Sales</span><span class="chip">GTM</span><span class="chip">CXO</span></div>
-        </div>
-        <div class="acard">
-          <div class="n">— 04</div>
-          <h3>Applied ML</h3>
-          <p>Deep learning, computer vision, geospatial analysis with CNN/RL architectures, and automated analytics pipelines for production systems.</p>
-          <div class="chips"><span class="chip">Deep Learning</span><span class="chip">CV</span><span class="chip">CNN</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="wrap">
-    <div class="shead">
-      <h2 class="reveal"><span class="idx"><b>02</b> — EXPERIENCE</span>Where I've <em>built.</em></h2>
-      <p class="reveal" data-d="1">Three roles. One trajectory. From AI research to enterprise pre-sales.</p>
-    </div>
-    <div class="timeline">
-      <article class="role reveal">
-        <div>
-          <div class="when">Nov 2024 — Present</div>
-          <div class="where">Bengaluru · Phison Joint Venture</div>
-        </div>
-        <div>
-          <h3>MiPhi Semiconductors</h3>
-          <div class="what">Solution Consultant &amp; Pre-Sales Engineer</div>
-          <ul>
-            <li>Translated enterprise customer requirements into scalable <b>AI infrastructure and system architectures</b>, aligning solutions with business objectives across automotive and enterprise domains.</li>
-            <li>Delivered <b>70+ proof-of-concept demonstrations</b> with a 60% qualification rate, contributing to a 25% uplift in partner-driven pipeline.</li>
-            <li>Architected and presented an enterprise-grade server infrastructure solution for a <b>government telecom RFP</b> — leading architecture design, technical proposals, and cross-functional alignment.</li>
-            <li>Automated HubSpot CRM workflows and sales dashboards, increasing pipeline visibility by <b>40%</b> and enabling data-driven forecasting at CXO level.</li>
-            <li>Represented MiPhi at <b>AI Impact Summit, Supercomputing India, and Electronica India</b> — generating enterprise leads and strengthening strategic partnerships.</li>
-          </ul>
-          <div class="metrics"><span class="metric">70+ Demos</span><span class="metric">60% Qual. Rate</span><span class="metric">25% Pipeline ↑</span><span class="metric">40% CRM ↑</span></div>
-        </div>
-      </article>
-      <article class="role reveal">
-        <div>
-          <div class="when">Jan 2024 — Jun 2024</div>
-          <div class="where">Hyderabad · Remote</div>
-        </div>
-        <div>
-          <h3>Tata Institute of Social Sciences</h3>
-          <div class="what">AI Developer Intern</div>
-          <ul>
-            <li>Enhanced computer vision models for <b>geospatial analysis</b>, improving model accuracy by 18% through optimized preprocessing and pipeline tuning.</li>
-            <li>Processed and analyzed large-scale geospatial datasets using <b>PyTorch</b>, improving training efficiency and data reliability across multi-region datasets.</li>
-          </ul>
-        </div>
-      </article>
-      <article class="role reveal">
-        <div>
-          <div class="when">Jul 2023 — Aug 2023</div>
-          <div class="where">Coimbatore · Hybrid</div>
-        </div>
-        <div>
-          <h3>KGISL</h3>
-          <div class="what">AI Automation Intern</div>
-          <ul>
-            <li>Developed and deployed an <b>automated web scraping and analytics pipeline</b>, reducing manual data collection by 70% and accelerating production insights delivery.</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="wrap">
-    <div class="shead">
-      <h2 class="reveal"><span class="idx"><b>03</b> — PROJECTS</span>Selected <em>work.</em></h2>
-      <p class="reveal" data-d="1">From autonomous driving research to enterprise government RFPs.</p>
-    </div>
-    <div class="projects">
-      <article class="pcard reveal">
-        <div class="n">— 01</div>
-        <h3>Autonomous Driving<small>CNN + RL</small></h3>
-        <p>Vision-to-LiDAR conversion model using 360° multi-camera data. End-to-end deep learning system for real-time autonomous vehicle perception.</p>
-        <div class="res">65–70% detection accuracy on CARLA simulation</div>
-        <div class="chips"><span class="chip">PyTorch</span><span class="chip">CNN</span><span class="chip">RL</span><span class="chip">LiDAR</span></div>
-      </article>
-      <article class="pcard reveal" data-d="1">
-        <div class="n">— 02</div>
-        <h3>Government Telecom<small>Server RFP</small></h3>
-        <p>Enterprise-grade AI server infrastructure solution for a national government telecom RFP. Architecture design, technical proposals, cross-functional coordination.</p>
-        <div class="res">Architecture delivered for government evaluation</div>
-        <div class="chips"><span class="chip">Architecture</span><span class="chip">HPC</span><span class="chip">NVMe</span><span class="chip">RFP</span></div>
-      </article>
-      <article class="pcard reveal" data-d="2">
-        <div class="n">— 03</div>
-        <h3>Geospatial CV<small>Tata Institute</small></h3>
-        <p>Computer vision models for large-scale geospatial analysis at Tata Institute. Optimized preprocessing pipelines for satellite and aerial imagery datasets.</p>
-        <div class="res">18% accuracy improvement via pipeline tuning</div>
-        <div class="chips"><span class="chip">PyTorch</span><span class="chip">QGIS</span><span class="chip">Computer Vision</span></div>
-      </article>
-      <article class="pcard reveal">
-        <div class="n">— 04</div>
-        <h3>AI Infringement<small>Tracking System</small></h3>
-        <p>Java-based plagiarism and AI-content detection for online examinations. Similarity detection algorithms for academic integrity at scale.</p>
-        <div class="res">60% reduction in manual review effort</div>
-        <div class="chips"><span class="chip">Java</span><span class="chip">NLP</span><span class="chip">Text Analytics</span></div>
-      </article>
-      <article class="pcard reveal" data-d="1">
-        <div class="n">— 05</div>
-        <h3>IoT Home Security<small>Smart India Hackathon</small></h3>
-        <p>Low-cost IoT solution with real-time monitoring, gas-leakage detection, and remote access control. Scalable residential deployment design.</p>
-        <div class="res">Smart India Hackathon 2021 submission</div>
-        <div class="chips"><span class="chip">IoT</span><span class="chip">Arduino</span><span class="chip">Android</span></div>
-      </article>
-      <article class="pcard reveal" data-d="2">
-        <div class="n">— 06</div>
-        <h3>HubSpot CRM<small>Pipeline Automation</small></h3>
-        <p>Architected HubSpot CRM workflows and dashboards for enterprise pre-sales pipeline management. Real-time visibility for leadership decision-making.</p>
-        <div class="res">40% pipeline visibility uplift · 8 hrs/week saved</div>
-        <div class="chips"><span class="chip">HubSpot</span><span class="chip">Automation</span><span class="chip">Python</span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee" aria-hidden="true">
-  <div class="track">
-    <span>Solution Architecture</span><span>PyTorch</span><span>Pre-Sales</span><span>AI Infrastructure</span><span>HubSpot CRM</span><span>Cloud</span><span>Python · SQL · Java</span>
-    <span>Solution Architecture</span><span>PyTorch</span><span>Pre-Sales</span><span>AI Infrastructure</span><span>HubSpot CRM</span><span>Cloud</span><span>Python · SQL · Java</span>
+<!-- ══════════════ MOBILE DRAWER ══════════════ -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <nav class="drawer__nav">
+    <a href="#about"><i>01</i> About</a>
+    <a href="#method"><i>02</i> Method</a>
+    <a href="#experience"><i>03</i> Experience</a>
+    <a href="#work"><i>04</i> Work</a>
+    <a href="#stack"><i>05</i> Stack</a>
+    <a href="#credentials"><i>06</i> Credentials</a>
+    <a href="#contact"><i>07</i> Contact</a>
+  </nav>
+  <div class="drawer__foot">
+    <button type="button" data-resume>Download resume</button>
+    <a href="mailto:raswanthcb@gmail.com">raswanthcb@gmail.com</a>
   </div>
 </div>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="wrap">
-    <div class="shead">
-      <h2 class="reveal"><span class="idx"><b>04</b> — SKILLS</span>Tools of the <em>trade.</em></h2>
-      <p class="reveal" data-d="1">A consulting toolkit spanning architecture, machine learning, infrastructure, and platforms.</p>
-    </div>
-    <div class="skills">
-      <div class="skillcol reveal">
-        <h4>Consulting &amp; Pre-Sales</h4>
-        <ul><li>Solution Architecture</li><li>Technical Pre-Sales</li><li>PoC Development</li><li>CXO Engagement</li><li>RFP / RFI Authoring</li></ul>
-      </div>
-      <div class="skillcol reveal" data-d="1">
-        <h4>AI / Machine Learning</h4>
-        <ul><li>Python · PyTorch</li><li>Deep Learning · CNN</li><li>Computer Vision</li><li>LLMs / Gen AI</li><li>Data Pipelines</li></ul>
-      </div>
-      <div class="skillcol reveal" data-d="2">
-        <h4>Infrastructure &amp; Cloud</h4>
-        <ul><li>Enterprise Architecture</li><li>Cloud / On-Prem Hybrid</li><li>API Integrations</li><li>SQL · Databases</li><li>AWS · Azure · GCP</li></ul>
-      </div>
-      <div class="skillcol reveal" data-d="3">
-        <h4>Tools &amp; Platforms</h4>
-        <ul><li>HubSpot CRM</li><li>Power BI · Tableau</li><li>Java · JavaScript</li><li>Jira · Confluence</li><li>Microsoft 365</li></ul>
+<!-- ══════════════ SIDE RAIL ══════════════ -->
+<aside class="rail" id="rail" aria-hidden="true">
+  <span class="rail__track"><i id="railFill"></i></span>
+  <ol class="rail__list">
+    <li data-rail="hero"><b>00</b></li>
+    <li data-rail="about"><b>01</b></li>
+    <li data-rail="method"><b>02</b></li>
+    <li data-rail="experience"><b>03</b></li>
+    <li data-rail="work"><b>04</b></li>
+    <li data-rail="stack"><b>05</b></li>
+    <li data-rail="credentials"><b>06</b></li>
+    <li data-rail="contact"><b>07</b></li>
+  </ol>
+</aside>
+
+<main id="main">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="hero" data-section="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="status" data-reveal>
+      <span class="status__dot" aria-hidden="true"></span>
+      <span class="status__text">Open to Solution Consultant, Engineer &amp; Architect roles<span class="status__sep" aria-hidden="true">/</span>Bengaluru, India</span>
+    </p>
+
+    <h1 class="hero__title">
+      <span class="line"><span class="split" data-split>Enterprise AI,</span></span>
+      <span class="line"><span class="split split--accent" data-split>translated into</span></span>
+      <span class="line"><span class="split" data-split>technical wins.</span></span>
+    </h1>
+
+    <div class="hero__lede">
+      <p data-reveal>
+        I'm <strong>Raswanth</strong> — a solution consultant working between AI infrastructure
+        and the people who buy it. I run the discovery, design the architecture, build the
+        proof of concept, and see it through to the technical win.
+      </p>
+      <div class="hero__cta" data-reveal>
+        <a class="btn btn--solid" href="#work">
+          See the work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </a>
+        <button class="btn btn--line" type="button" data-resume>Download resume</button>
       </div>
     </div>
 
-    <!-- CERTS -->
-    <div class="shead">
-      <h2 class="reveal"><span class="idx"><b>05</b> — CREDENTIALS</span>Certified <em>expertise.</em></h2>
-      <p class="reveal" data-d="1">One earned. Three more on the path.</p>
+    <div class="hero__portrait" data-reveal>
+      <div class="portrait">
+        <img src="assets/img/raswanth.jpg" alt="Portrait of Raswanth CB" width="800" height="1200" fetchpriority="high" decoding="async">
+        <span class="portrait__tag">MiPhi Semiconductors<em>Phison JV</em></span>
+      </div>
     </div>
-    <div class="certs">
-      <div class="cert reveal">
-        <div class="ic">⚡</div>
-        <div>
-          <h3>Agentic AI Business Solutions Architect</h3>
-          <div class="org">Microsoft · 2024</div>
-          <p>AI-driven business solutions using agentic workflows, orchestration patterns, and enterprise automation architecture.</p>
-          <span class="badge earned">● EARNED</span>
-        </div>
-      </div>
-      <div class="cert reveal" data-d="1">
-        <div class="ic">☁️</div>
-        <div>
-          <h3>AWS Solutions Architect Associate</h3>
-          <div class="org">Amazon Web Services · 2026</div>
-          <p>Cloud architecture, design patterns, security, and best practices. The #1 cert in 80%+ of solution consultant JDs.</p>
-          <span class="badge prog">◐ IN PROGRESS</span>
-        </div>
-      </div>
-      <div class="cert reveal">
-        <div class="ic">🔷</div>
-        <div>
-          <h3>Azure Fundamentals · AI-900</h3>
-          <div class="org">Microsoft · 2026</div>
-          <p>Azure cloud services foundations and AI service integration — required baseline for Microsoft TSP roles.</p>
-          <span class="badge plan">○ PLANNED</span>
-        </div>
-      </div>
-      <div class="cert reveal" data-d="1">
-        <div class="ic">✦</div>
-        <div>
-          <h3>Salesforce Certified Administrator</h3>
-          <div class="org">Salesforce · 2026</div>
-          <p>Foundation for the Salesforce Solution Engineer track — required by 90% of Salesforce hiring managers.</p>
-          <span class="badge plan">○ PLANNED</span>
-        </div>
-      </div>
+  </div>
+
+  <div class="hero__foot">
+    <a class="scroll-cue" href="#proof">
+      <span class="scroll-cue__line" aria-hidden="true"></span>
+      Scroll
+    </a>
+    <p class="hero__roles">Solution Consultant <i>·</i> Solution Engineer <i>·</i> Solution Architect <i>·</i> Technology Consultant</p>
+  </div>
+</section>
+
+<!-- ══════════════ PROOF STRIP ══════════════ -->
+<section class="proof" id="proof" aria-label="Impact by the numbers">
+  <div class="proof__inner">
+    <article class="stat" data-reveal>
+      <b class="stat__num" data-count="70" data-suffix="+">0</b>
+      <span class="stat__label">Enterprise POC demonstrations delivered</span>
+    </article>
+    <article class="stat" data-reveal>
+      <b class="stat__num" data-count="60" data-suffix="%">0</b>
+      <span class="stat__label">Opportunity qualification rate via structured discovery</span>
+    </article>
+    <article class="stat" data-reveal>
+      <b class="stat__num" data-count="25" data-prefix="+" data-suffix="%">0</b>
+      <span class="stat__label">Partner-driven pipeline growth at MiPhi</span>
+    </article>
+    <article class="stat" data-reveal>
+      <b class="stat__num" data-count="40" data-prefix="+" data-suffix="%">0</b>
+      <span class="stat__label">Pipeline visibility uplift through CRM automation</span>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="section" id="about" data-section="about">
+  <header class="sec-head">
+    <span class="eyebrow" data-reveal><i>01</i> About</span>
+    <h2 class="sec-title">
+      <span class="line"><span class="split" data-split>Where capability</span></span>
+      <span class="line"><span class="split" data-split>meets the</span> <span class="split split--accent" data-split>business case.</span></span>
+    </h2>
+  </header>
+
+  <div class="about">
+    <div class="about__copy">
+      <p class="lede" data-reveal>
+        Most AI conversations stall in the gap between what a platform can do and what a
+        business will pay for. That gap is where I work.
+      </p>
+      <p data-reveal>
+        At MiPhi Semiconductors — a Phison joint venture — I translate enterprise requirements
+        into AI infrastructure and system architectures across automotive, government and
+        enterprise accounts. A single day can move from an engineering deep-dive, to an RFP
+        evaluation board, to a CXO pipeline review — and my job is to make all three
+        conversations point the same direction.
+      </p>
+      <p data-reveal>
+        The technical foundation is real: deep learning and computer vision research at Tata
+        Institute of Social Sciences, CNN and reinforcement learning perception models,
+        geospatial pipelines built in PyTorch. I use it every day. It's the difference between
+        demonstrating a product and defending an architecture.
+      </p>
+
+      <ul class="about__facts" data-reveal>
+        <li><b>Based</b> Bengaluru, India</li>
+        <li><b>Focus</b> AI infrastructure, HPC &amp; enterprise storage</li>
+        <li><b>Audiences</b> Engineering, procurement, CXO, government evaluation boards</li>
+        <li><b>Target</b> Google · Microsoft · Salesforce · AWS · ServiceNow · Adobe</li>
+      </ul>
+    </div>
+
+    <div class="about__pillars">
+      <article class="pillar" data-reveal>
+        <span class="pillar__idx">01</span>
+        <h3>AI Infrastructure</h3>
+        <p>Enterprise-grade AI deployments across cloud and on-prem — HPC clusters, NVMe tiering and AI storage architecture sized for production workloads.</p>
+        <ul class="chips"><li>HPC</li><li>NVMe</li><li>Cloud / On-Prem</li></ul>
+      </article>
+      <article class="pillar" data-reveal>
+        <span class="pillar__idx">02</span>
+        <h3>Solution Architecture</h3>
+        <p>End-to-end design and defense — requirement mapping, reference architectures, RFP/RFI response authoring and technical proposals for government and enterprise buyers.</p>
+        <ul class="chips"><li>RFP / RFI</li><li>Reference Arch</li><li>PoC</li></ul>
+      </article>
+      <article class="pillar" data-reveal>
+        <span class="pillar__idx">03</span>
+        <h3>Pre-Sales &amp; GTM</h3>
+        <p>Structured discovery, demo strategy, partner enablement and pipeline orchestration — with CXO-level stakeholder management through to technical close.</p>
+        <ul class="chips"><li>Discovery</li><li>Partner GTM</li><li>CXO</li></ul>
+      </article>
+      <article class="pillar" data-reveal>
+        <span class="pillar__idx">04</span>
+        <h3>Applied ML</h3>
+        <p>Hands-on deep learning, computer vision and geospatial analysis — CNN/RL architectures and automated analytics pipelines that make demos real, not theatrical.</p>
+        <ul class="chips"><li>PyTorch</li><li>CV</li><li>LLM / GenAI</li></ul>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="wrap">
-    <span class="eyebrow reveal" style="justify-content:center">Get in touch</span>
-    <h2 class="reveal" data-d="1">Let's build something <em>great.</em></h2>
-    <p class="reveal" data-d="2">I'm open to solution consulting and pre-sales roles — especially at Google, Microsoft, Salesforce, AWS, ServiceNow, and Adobe.</p>
-    <div class="contact-links reveal" data-d="3">
-      <a href="mailto:raswanthcb@gmail.com" class="clink mail">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-        raswanthcb@gmail.com</a>
-      <a href="https://www.linkedin.com/in/raswanth-cb-0250451b0/" target="_blank" rel="noopener" class="clink">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 17V10.2H6.1V17zM7.22 9.24a1.3 1.3 0 1 0 0-2.6 1.3 1.3 0 0 0 0 2.6zM18 17v-3.73c0-2-1.07-2.93-2.5-2.93a2.16 2.16 0 0 0-1.95 1.07V10.2h-2.24V17h2.24v-3.6c0-.94.18-1.85 1.35-1.85s1.16 1.08 1.16 1.91V17z"/></svg>
-        /in/raswanth-cb</a>
-      <a href="https://github.com/raswanth12" target="_blank" rel="noopener" class="clink">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.57.67.48A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
-        @raswanth12</a>
+<!-- ══════════════ METHOD (PINNED) ══════════════ -->
+<section class="method" id="method" data-section="method">
+  <div class="method__pin" id="methodPin">
+    <div class="method__head">
+      <span class="eyebrow"><i>02</i> Method</span>
+      <h2 class="sec-title sec-title--sm">How a technical win<br>actually gets made.</h2>
+      <p class="method__note">Four moves. Repeated across 70+ enterprise engagements.</p>
+      <span class="method__progress"><i id="methodFill"></i></span>
+    </div>
+
+    <div class="method__track" id="methodTrack">
+      <article class="step">
+        <span class="step__num">01</span>
+        <h3 class="step__title">Discover</h3>
+        <p class="step__body">Qualify hard and early. Map the technical requirement to the commercial trigger, identify every decision-maker, and surface the constraint the customer hasn't raised yet.</p>
+        <ul class="step__list">
+          <li>Structured discovery framework</li>
+          <li>Stakeholder &amp; decision map</li>
+          <li>Technical qualification criteria</li>
+        </ul>
+        <span class="step__metric"><b>60%</b> qualification rate</span>
+      </article>
+
+      <article class="step">
+        <span class="step__num">02</span>
+        <h3 class="step__title">Architect</h3>
+        <p class="step__body">Design the answer against real constraints — throughput, latency, budget, procurement rules. Then write it down so someone else can defend it without me in the room.</p>
+        <ul class="step__list">
+          <li>Reference architecture &amp; sizing</li>
+          <li>RFP / RFI technical response</li>
+          <li>Cross-functional alignment</li>
+        </ul>
+        <span class="step__metric"><b>Government</b> telecom RFP led</span>
+      </article>
+
+      <article class="step">
+        <span class="step__num">03</span>
+        <h3 class="step__title">Demonstrate</h3>
+        <p class="step__body">Build the proof of concept that answers the one question blocking the deal. Not a feature tour — a targeted, measurable answer to the customer's biggest doubt.</p>
+        <ul class="step__list">
+          <li>Scoped PoC with success criteria</li>
+          <li>Executive &amp; engineering demo tracks</li>
+          <li>Benchmark &amp; validation reporting</li>
+        </ul>
+        <span class="step__metric"><b>70+</b> demonstrations delivered</span>
+      </article>
+
+      <article class="step">
+        <span class="step__num">04</span>
+        <h3 class="step__title">Scale</h3>
+        <p class="step__body">Turn one win into a repeatable motion — enable partners, automate the pipeline, and give leadership the forecast visibility to fund the next round.</p>
+        <ul class="step__list">
+          <li>Partner enablement &amp; co-selling</li>
+          <li>CRM workflow automation</li>
+          <li>CXO forecasting dashboards</li>
+        </ul>
+        <span class="step__metric"><b>+25%</b> partner pipeline</span>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="wrap foot">
-    <span>© 2026 RASWANTH CB · BENGALURU, INDIA</span>
-    <a href="#hero">BACK TO TOP ↑</a>
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section class="section" id="experience" data-section="experience">
+  <header class="sec-head">
+    <span class="eyebrow" data-reveal><i>03</i> Experience</span>
+    <h2 class="sec-title">
+      <span class="line"><span class="split" data-split>Research bench</span></span>
+      <span class="line"><span class="split" data-split>to the</span> <span class="split split--accent" data-split>deal room.</span></span>
+    </h2>
+  </header>
+
+  <ol class="timeline">
+    <li class="job" data-reveal>
+      <div class="job__meta">
+        <span class="job__date">Nov 2024 — Present</span>
+        <span class="job__place">Bengaluru · Phison Joint Venture</span>
+      </div>
+      <div class="job__body">
+        <h3 class="job__org">MiPhi Semiconductors</h3>
+        <p class="job__role">Solution Consultant &amp; Pre-Sales Engineer</p>
+        <ul class="job__points">
+          <li>Translate enterprise customer requirements into scalable <strong>AI infrastructure and system architectures</strong>, aligning technical design with business objectives across automotive and enterprise accounts.</li>
+          <li>Delivered <strong>70+ proof-of-concept demonstrations</strong> at a 60% qualification rate, contributing to a 25% uplift in partner-driven pipeline.</li>
+          <li>Architected and presented enterprise-grade server infrastructure for a <strong>national government telecom RFP</strong> — owning architecture design, technical proposal authoring and cross-functional alignment.</li>
+          <li>Automated HubSpot CRM workflows and executive dashboards, lifting pipeline visibility <strong>40%</strong> and enabling data-driven forecasting at CXO level.</li>
+          <li>Represented MiPhi at <strong>AI Impact Summit, Supercomputing India and Electronica India</strong> — generating enterprise leads and deepening strategic partnerships.</li>
+        </ul>
+        <ul class="chips chips--metric">
+          <li>70+ Demos</li><li>60% Qual Rate</li><li>+25% Pipeline</li><li>+40% CRM Visibility</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="job" data-reveal>
+      <div class="job__meta">
+        <span class="job__date">Jan 2024 — Jun 2024</span>
+        <span class="job__place">Hyderabad · Remote</span>
+      </div>
+      <div class="job__body">
+        <h3 class="job__org">Tata Institute of Social Sciences</h3>
+        <p class="job__role">AI Developer Intern</p>
+        <ul class="job__points">
+          <li>Enhanced computer vision models for <strong>geospatial analysis</strong>, improving model accuracy 18% through optimized preprocessing and pipeline tuning.</li>
+          <li>Processed and analyzed large-scale geospatial datasets in <strong>PyTorch</strong>, improving training efficiency and data reliability across multi-region imagery.</li>
+        </ul>
+        <ul class="chips chips--metric"><li>+18% Accuracy</li><li>PyTorch</li><li>Geospatial CV</li></ul>
+      </div>
+    </li>
+
+    <li class="job" data-reveal>
+      <div class="job__meta">
+        <span class="job__date">Jul 2023 — Aug 2023</span>
+        <span class="job__place">Coimbatore · Hybrid</span>
+      </div>
+      <div class="job__body">
+        <h3 class="job__org">KGISL</h3>
+        <p class="job__role">AI Automation Intern</p>
+        <ul class="job__points">
+          <li>Built and deployed an <strong>automated web scraping and analytics pipeline</strong>, cutting manual data collection 70% and accelerating delivery of production insights.</li>
+        </ul>
+        <ul class="chips chips--metric"><li>−70% Manual Effort</li><li>Automation</li></ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ══════════════ WORK ══════════════ -->
+<section class="section section--work" id="work" data-section="work">
+  <header class="sec-head sec-head--row">
+    <div>
+      <span class="eyebrow" data-reveal><i>04</i> Selected work</span>
+      <h2 class="sec-title">
+        <span class="line"><span class="split" data-split>Engagements</span></span>
+        <span class="line"><span class="split" data-split>and</span> <span class="split split--accent" data-split>outcomes.</span></span>
+      </h2>
+    </div>
+    <div class="filters" role="tablist" aria-label="Filter work">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter" data-filter="consulting" role="tab" aria-selected="false">Consulting</button>
+      <button class="filter" data-filter="ai" role="tab" aria-selected="false">Applied AI</button>
+      <button class="filter" data-filter="infra" role="tab" aria-selected="false">Infrastructure</button>
+    </div>
+  </header>
+
+  <div class="work" id="workGrid">
+
+    <article class="card card--wide" data-tags="consulting infra" data-reveal>
+      <div class="card__art" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" class="art art--rack">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".55"/><stop offset="1" stop-color="var(--accent-2)" stop-opacity=".12"/></linearGradient></defs>
+          <g stroke="url(#g1)" fill="none" stroke-width="1">
+            <rect x="40" y="30" width="120" height="140" rx="4"/><rect x="170" y="30" width="120" height="140" rx="4"/>
+            <g stroke-opacity=".7">
+              <path d="M48 46h104M48 62h104M48 78h104M48 94h104M48 110h104M48 126h104M48 142h104"/>
+              <path d="M178 46h104M178 62h104M178 78h104M178 94h104M178 110h104M178 126h104M178 142h104"/>
+            </g>
+            <path d="M300 100h60M290 60h70M290 140h70" stroke-dasharray="3 5"/>
+          </g>
+          <g fill="var(--accent)"><circle cx="146" cy="46" r="2"/><circle cx="276" cy="94" r="2"/><circle cx="146" cy="126" r="2"/></g>
+        </svg>
+      </div>
+      <div class="card__body">
+        <span class="card__tag">Government · Telecom</span>
+        <h3 class="card__title">National telecom server RFP</h3>
+        <p class="card__desc">Enterprise-grade AI server infrastructure for a national government telecom tender. Owned reference architecture, sizing, technical proposal authoring and cross-functional coordination through evaluation.</p>
+        <ul class="chips"><li>Architecture</li><li>HPC</li><li>NVMe</li><li>RFP</li></ul>
+        <span class="card__result">Architecture delivered for government evaluation</span>
+      </div>
+    </article>
+
+    <article class="card" data-tags="ai" data-reveal>
+      <div class="card__art" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" class="art art--lidar">
+          <g fill="var(--accent)" fill-opacity=".7">
+            <circle cx="200" cy="110" r="3"/>
+          </g>
+          <g stroke="var(--accent)" fill="none" stroke-opacity=".35">
+            <ellipse cx="200" cy="110" rx="40" ry="14"/><ellipse cx="200" cy="110" rx="80" ry="28"/>
+            <ellipse cx="200" cy="110" rx="120" ry="42"/><ellipse cx="200" cy="110" rx="160" ry="56"/>
+          </g>
+          <g fill="var(--accent-2)" fill-opacity=".8">
+            <circle cx="120" cy="96" r="1.6"/><circle cx="280" cy="124" r="1.6"/><circle cx="160" cy="140" r="1.6"/>
+            <circle cx="250" cy="80" r="1.6"/><circle cx="90" cy="128" r="1.6"/><circle cx="320" cy="100" r="1.6"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card__body">
+        <span class="card__tag">Autonomous driving</span>
+        <h3 class="card__title">Vision-to-LiDAR perception</h3>
+        <p class="card__desc">CNN + reinforcement learning model converting 360° multi-camera input into LiDAR-equivalent depth for real-time autonomous vehicle perception.</p>
+        <ul class="chips"><li>PyTorch</li><li>CNN</li><li>RL</li><li>CARLA</li></ul>
+        <span class="card__result">65–70% detection accuracy in CARLA simulation</span>
+      </div>
+    </article>
+
+    <article class="card" data-tags="ai" data-reveal>
+      <div class="card__art" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" class="art art--geo">
+          <g stroke="var(--accent)" stroke-opacity=".28" fill="none">
+            <path d="M0 40h400M0 80h400M0 120h400M0 160h400M60 0v200M140 0v200M220 0v200M300 0v200"/>
+          </g>
+          <path d="M60 130c30-40 60 10 90-20s70 20 100-10 60 0 90-30" fill="none" stroke="var(--accent-2)" stroke-width="1.4" stroke-opacity=".85"/>
+          <g fill="var(--accent)" fill-opacity=".9"><rect x="136" y="76" width="8" height="8"/><rect x="216" y="116" width="8" height="8"/><rect x="296" y="36" width="8" height="8"/></g>
+        </svg>
+      </div>
+      <div class="card__body">
+        <span class="card__tag">Tata Institute of Social Sciences</span>
+        <h3 class="card__title">Geospatial computer vision</h3>
+        <p class="card__desc">Computer vision models for large-scale geospatial analysis, with optimized preprocessing pipelines across satellite and aerial imagery datasets.</p>
+        <ul class="chips"><li>PyTorch</li><li>QGIS</li><li>Computer Vision</li></ul>
+        <span class="card__result">18% accuracy improvement via pipeline tuning</span>
+      </div>
+    </article>
+
+    <article class="card" data-tags="consulting" data-reveal>
+      <div class="card__art" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" class="art art--funnel">
+          <g fill="none" stroke="var(--accent)" stroke-opacity=".5">
+            <path d="M70 40h260l-70 60v60l-120 30v-90z"/>
+          </g>
+          <g stroke="var(--accent-2)" stroke-opacity=".55"><path d="M70 70h260M96 100h208M126 130h148"/></g>
+          <g fill="var(--accent)"><circle cx="330" cy="40" r="2.5"/><circle cx="200" cy="190" r="2.5"/></g>
+        </svg>
+      </div>
+      <div class="card__body">
+        <span class="card__tag">Revenue operations</span>
+        <h3 class="card__title">HubSpot pipeline automation</h3>
+        <p class="card__desc">Architected CRM workflows, lifecycle stages and leadership dashboards for enterprise pre-sales — turning scattered deal data into a forecastable pipeline.</p>
+        <ul class="chips"><li>HubSpot</li><li>Automation</li><li>Python</li></ul>
+        <span class="card__result">+40% pipeline visibility · ~8 hrs/week reclaimed</span>
+      </div>
+    </article>
+
+    <article class="card" data-tags="ai" data-reveal>
+      <div class="card__art" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" class="art art--text">
+          <g fill="var(--accent)" fill-opacity=".22">
+            <rect x="60" y="50" width="150" height="6" rx="3"/><rect x="60" y="70" width="220" height="6" rx="3"/>
+            <rect x="60" y="90" width="180" height="6" rx="3"/><rect x="60" y="110" width="240" height="6" rx="3"/>
+            <rect x="60" y="130" width="130" height="6" rx="3"/>
+          </g>
+          <g fill="var(--accent-2)" fill-opacity=".75">
+            <rect x="60" y="70" width="90" height="6" rx="3"/><rect x="60" y="110" width="120" height="6" rx="3"/>
+          </g>
+          <circle cx="320" cy="90" r="26" fill="none" stroke="var(--accent)" stroke-opacity=".5"/>
+          <path d="M338 108l18 18" stroke="var(--accent)" stroke-opacity=".5" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="card__body">
+        <span class="card__tag">Academic integrity</span>
+        <h3 class="card__title">AI infringement tracking</h3>
+        <p class="card__desc">Java-based plagiarism and AI-content detection for online examinations, using similarity detection to flag compromised submissions at scale.</p>
+        <ul class="chips"><li>Java</li><li>NLP</li><li>Text Analytics</li></ul>
+        <span class="card__result">60% reduction in manual review effort</span>
+      </div>
+    </article>
+
+    <article class="card" data-tags="infra" data-reveal>
+      <div class="card__art" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" class="art art--iot">
+          <g fill="none" stroke="var(--accent)" stroke-opacity=".45">
+            <rect x="150" y="70" width="100" height="70" rx="6"/>
+            <path d="M140 60l60-30 60 30"/>
+          </g>
+          <g stroke="var(--accent-2)" stroke-opacity=".6" fill="none">
+            <path d="M70 105h60M270 105h60M200 150v30"/>
+            <circle cx="60" cy="105" r="8"/><circle cx="340" cy="105" r="8"/><circle cx="200" cy="190" r="8"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card__body">
+        <span class="card__tag">Smart India Hackathon</span>
+        <h3 class="card__title">IoT home security</h3>
+        <p class="card__desc">Low-cost IoT system with real-time monitoring, gas-leakage detection and remote access control, designed for scalable residential deployment.</p>
+        <ul class="chips"><li>IoT</li><li>Arduino</li><li>Android</li></ul>
+        <span class="card__result">Smart India Hackathon 2021 submission</span>
+      </div>
+    </article>
+
   </div>
+</section>
+
+<!-- ══════════════ MARQUEE ══════════════ -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee__row" id="marquee">
+    <span class="marquee__set">
+      Solution Architecture <i>◆</i> Pre-Sales Engineering <i>◆</i> AI Infrastructure <i>◆</i> RFP Response <i>◆</i>
+      PyTorch <i>◆</i> HPC &amp; NVMe <i>◆</i> HubSpot CRM <i>◆</i> Technical Discovery <i>◆</i> CXO Engagement <i>◆</i>
+    </span>
+    <span class="marquee__set">
+      Solution Architecture <i>◆</i> Pre-Sales Engineering <i>◆</i> AI Infrastructure <i>◆</i> RFP Response <i>◆</i>
+      PyTorch <i>◆</i> HPC &amp; NVMe <i>◆</i> HubSpot CRM <i>◆</i> Technical Discovery <i>◆</i> CXO Engagement <i>◆</i>
+    </span>
+  </div>
+</section>
+
+<!-- ══════════════ STACK ══════════════ -->
+<section class="section" id="stack" data-section="stack">
+  <header class="sec-head">
+    <span class="eyebrow" data-reveal><i>05</i> Stack</span>
+    <h2 class="sec-title">
+      <span class="line"><span class="split" data-split>The consulting</span></span>
+      <span class="line"><span class="split split--accent" data-split>toolkit.</span></span>
+    </h2>
+  </header>
+
+  <div class="stack">
+    <article class="stack__col" data-reveal>
+      <h3>Consulting &amp; Pre-Sales</h3>
+      <ul>
+        <li>Solution Architecture</li><li>Technical Pre-Sales</li><li>Structured Discovery</li>
+        <li>PoC Development</li><li>RFP / RFI Authoring</li><li>CXO Engagement</li>
+      </ul>
+    </article>
+    <article class="stack__col" data-reveal>
+      <h3>AI &amp; Machine Learning</h3>
+      <ul>
+        <li>Python · PyTorch</li><li>Deep Learning · CNN</li><li>Computer Vision</li>
+        <li>LLMs / Generative AI</li><li>Data Pipelines</li><li>Reinforcement Learning</li>
+      </ul>
+    </article>
+    <article class="stack__col" data-reveal>
+      <h3>Infrastructure &amp; Cloud</h3>
+      <ul>
+        <li>Enterprise Architecture</li><li>HPC · NVMe · AI Storage</li><li>Cloud / On-Prem Hybrid</li>
+        <li>API Integrations</li><li>SQL · Databases</li><li>AWS · Azure · GCP</li>
+      </ul>
+    </article>
+    <article class="stack__col" data-reveal>
+      <h3>Platforms &amp; Delivery</h3>
+      <ul>
+        <li>HubSpot CRM</li><li>Power BI · Tableau</li><li>Java · JavaScript</li>
+        <li>Jira · Confluence</li><li>Microsoft 365</li><li>QGIS</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════ CREDENTIALS ══════════════ -->
+<section class="section" id="credentials" data-section="credentials">
+  <header class="sec-head">
+    <span class="eyebrow" data-reveal><i>06</i> Credentials</span>
+    <h2 class="sec-title">
+      <span class="line"><span class="split" data-split>Certified,</span> <span class="split split--accent" data-split>and building on it.</span></span>
+    </h2>
+  </header>
+
+  <div class="creds">
+    <article class="cred is-earned" data-reveal>
+      <span class="cred__state">Earned</span>
+      <h3>Agentic AI Business Solutions Architect</h3>
+      <p class="cred__org">Microsoft · 2024</p>
+      <p class="cred__desc">AI-driven business solutions using agentic workflows, orchestration patterns and enterprise automation architecture.</p>
+    </article>
+    <article class="cred is-progress" data-reveal>
+      <span class="cred__state">In progress</span>
+      <h3>AWS Solutions Architect — Associate</h3>
+      <p class="cred__org">Amazon Web Services · 2026</p>
+      <p class="cred__desc">Cloud architecture, design patterns, security, and cost and performance trade-offs across core AWS services.</p>
+    </article>
+    <article class="cred is-planned" data-reveal>
+      <span class="cred__state">Planned</span>
+      <h3>Azure Fundamentals · AI-900</h3>
+      <p class="cred__org">Microsoft · 2026</p>
+      <p class="cred__desc">Azure cloud fundamentals and AI service integration — core services, governance and pricing models.</p>
+    </article>
+    <article class="cred is-planned" data-reveal>
+      <span class="cred__state">Planned</span>
+      <h3>Salesforce Certified Administrator</h3>
+      <p class="cred__org">Salesforce · 2026</p>
+      <p class="cred__desc">Foundation for the Salesforce Solution Engineer track — platform configuration, data model, security and automation.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section class="contact" id="contact" data-section="contact">
+  <div class="contact__inner">
+    <span class="eyebrow" data-reveal><i>07</i> Contact</span>
+    <h2 class="contact__title">
+      <span class="line"><span class="split" data-split>Let's put this</span></span>
+      <span class="line"><span class="split split--accent" data-split>to work.</span></span>
+    </h2>
+    <p class="contact__lede" data-reveal>
+      I'm open to Solution Consultant, Solution Engineer, Solution Architect and Technology
+      Consultant roles — particularly at Google, Microsoft, Salesforce, AWS, ServiceNow and
+      Adobe. If you're hiring, I'd like to hear about it.
+    </p>
+
+    <a class="mailto" href="mailto:raswanthcb@gmail.com">
+      <span class="mailto__text">raswanthcb@gmail.com</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+    </a>
+
+    <ul class="contact__links" data-reveal>
+      <li><a href="https://www.linkedin.com/in/raswanth-cb" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/raswanth12" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><button type="button" data-resume>Resume (PDF)</button></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Raswanth CB · Bengaluru, India</p>
+  <a class="totop" href="#hero">
+    Back to top
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V5"/><path d="m6 11 6-6 6 6"/></svg>
+  </a>
 </footer>
 
-<script>
-/* nav scroll state + progress bar */
-const header=document.getElementById('header'),progressBar=document.getElementById('progressBar');
-const onScroll=()=>{
-  header.classList.toggle('scrolled',scrollY>40);
-  const max=document.documentElement.scrollHeight-innerHeight;
-  progressBar.style.width=(max>0?Math.min(scrollY/max*100,100):0)+'%';
-};
-addEventListener('scroll',onScroll,{passive:true});
-onScroll();
+<!-- ══════════════ RESUME GATE ══════════════ -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" aria-describedby="gateIntro" hidden>
+  <div class="gate__panel">
+    <button class="gate__close" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
 
-/* mobile menu */
-const burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu');
-const setMenu=(open)=>{
-  burger.classList.toggle('open',open);
-  menu.classList.toggle('open',open);
-  burger.setAttribute('aria-expanded',open);
-  document.body.classList.toggle('no-scroll',open);
-};
-burger.addEventListener('click',()=>setMenu(!menu.classList.contains('open')));
-menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
-addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+    <span class="gate__eyebrow">Resume</span>
+    <h2 class="gate__title" id="gateTitle">A quick introduction first.</h2>
+    <p class="gate__intro" id="gateIntro">
+      I like to know who's reading. Tell me who you are and the PDF downloads
+      immediately — no confirmation email, no follow-up unless you want one.
+    </p>
 
-/* scrollspy — highlight the nav link of the section in view */
-const spyLinks=[...document.querySelectorAll('.nav-links a[href^="#"]')];
-const spy=new IntersectionObserver(es=>{
-  es.forEach(e=>{
-    if(e.isIntersecting)spyLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
-  });
-},{rootMargin:'-40% 0px -55% 0px'});
-spyLinks.forEach(a=>{const s=document.querySelector(a.getAttribute('href'));if(s)spy.observe(s)});
-spy.observe(document.getElementById('hero')); /* clears highlight back at the top */
+    <form class="gate__form" id="gateForm" novalidate>
+      <!-- honeypot: hidden from people, irresistible to bots -->
+      <div class="gate__hp" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
 
-/* cursor spotlight (desktop pointers only) */
-const spot=document.getElementById('spotlight');
-if(matchMedia('(pointer:fine)').matches){
-  let raf=null;
-  addEventListener('mousemove',e=>{
-    spot.classList.add('on');
-    if(raf)return;
-    raf=requestAnimationFrame(()=>{
-      spot.style.setProperty('--mx',e.clientX+'px');
-      spot.style.setProperty('--my',e.clientY+'px');
-      raf=null;
-    });
-  },{passive:true});
-}
+      <div class="field">
+        <label for="gname">Your name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="gname" name="name" autocomplete="name" required
+               aria-describedby="err-name" placeholder="Priya Raman">
+        <p class="field__err" id="err-name" role="alert"></p>
+      </div>
 
-/* reveal on scroll */
-const io=new IntersectionObserver((es)=>{
-  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+      <div class="field">
+        <label for="gcompany">Company <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="gcompany" name="company" autocomplete="organization" required
+               aria-describedby="err-company" placeholder="Acme Cloud">
+        <p class="field__err" id="err-company" role="alert"></p>
+      </div>
 
-/* count-up stats */
-const counted=new WeakSet();
-const co=new IntersectionObserver((es)=>{
-  es.forEach(e=>{
-    if(e.isIntersecting && !counted.has(e.target)){
-      counted.add(e.target);
-      const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||'';
-      const dur=1400,t0=performance.now();
-      const tick=(t)=>{
-        const p=Math.min((t-t0)/dur,1),ease=1-Math.pow(1-p,3);
-        el.textContent=Math.round(end*ease)+suf;
-        if(p<1)requestAnimationFrame(tick);
-      };requestAnimationFrame(tick);
-    }
-  });
-},{threshold:.6});
-document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+      <div class="field">
+        <label for="gemail">Email <span class="req" aria-hidden="true">*</span></label>
+        <input type="email" id="gemail" name="email" autocomplete="email" required
+               aria-describedby="err-email" placeholder="priya@acmecloud.com">
+        <p class="field__err" id="err-email" role="alert"></p>
+      </div>
 
-/* ============ IMMERSIVE / INTERACTIVE ============ */
-const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
-const FINE=matchMedia('(pointer:fine)').matches;
+      <div class="field">
+        <label for="gphone">Phone <span class="field__opt">optional</span></label>
+        <input type="tel" id="gphone" name="phone" autocomplete="tel"
+               aria-describedby="err-phone" placeholder="+91 98765 43210">
+        <p class="field__err" id="err-phone" role="alert"></p>
+      </div>
 
-/* — custom cursor (dot tracks precisely, ring lerps behind) — */
-if(FINE && !RM){
-  const dot=document.createElement('div'); dot.className='cur cur-dot';
-  const ring=document.createElement('div'); ring.className='cur cur-ring';
-  document.body.append(dot,ring);
-  document.documentElement.classList.add('has-cursor');
-  let rx=innerWidth/2,ry=innerHeight/2,tx=rx,ty=ry;
-  addEventListener('mousemove',e=>{
-    tx=e.clientX;ty=e.clientY;
-    dot.style.transform=`translate(${tx}px,${ty}px)`;
-  },{passive:true});
-  (function loop(){rx+=(tx-rx)*.2;ry+=(ty-ry)*.2;ring.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(loop);})();
-  document.querySelectorAll('a,button,.btn,.pcard,.acard,.cert,.clink,.chip').forEach(t=>{
-    t.addEventListener('mouseenter',()=>ring.classList.add('hov'));
-    t.addEventListener('mouseleave',()=>ring.classList.remove('hov'));
-  });
-  addEventListener('mousedown',()=>ring.classList.add('down'));
-  addEventListener('mouseup',()=>ring.classList.remove('down'));
-  addEventListener('mouseleave',()=>{dot.style.opacity=ring.style.opacity=0;});
-  addEventListener('mouseenter',()=>{dot.style.opacity=ring.style.opacity=1;});
-}
+      <button class="btn btn--solid gate__submit" type="submit" id="gateSubmit">Get the resume</button>
+      <p class="gate__status" id="gateStatus" role="status" aria-live="polite"></p>
+      <p class="gate__note">Used only so I know who's asking. Never shared or sold.</p>
+    </form>
+  </div>
+</div>
 
-/* — magnetic buttons — */
-if(FINE && !RM){
-  document.querySelectorAll('.magnetic').forEach(m=>{
-    const strength=.4;
-    m.addEventListener('mousemove',e=>{
-      const b=m.getBoundingClientRect();
-      m.style.transform=`translate(${(e.clientX-(b.left+b.width/2))*strength}px,${(e.clientY-(b.top+b.height/2))*strength}px)`;
-    });
-    m.addEventListener('mouseleave',()=>{m.style.transform='';});
-  });
-}
-
-/* — 3D tilt project cards — */
-if(FINE && !RM){
-  document.querySelectorAll('.pcard').forEach(c=>{
-    const g=document.createElement('div'); g.className='glare'; c.prepend(g);
-    const max=7;
-    c.addEventListener('mousemove',e=>{
-      const b=c.getBoundingClientRect(),px=(e.clientX-b.left)/b.width,py=(e.clientY-b.top)/b.height;
-      c.style.transform=`perspective(1000px) rotateX(${(.5-py)*max*2}deg) rotateY(${(px-.5)*max*2}deg) translateY(-6px)`;
-      g.style.setProperty('--gx',px*100+'%'); g.style.setProperty('--gy',py*100+'%');
-      c.classList.add('tilting');
-    });
-    c.addEventListener('mouseleave',()=>{c.style.transform='';c.classList.remove('tilting');});
-  });
-}
-
-/* — hero name decode/scramble — */
-(()=>{
-  const em=document.querySelector('[data-decode]'); if(!em||RM)return;
-  const final=em.textContent, chars='ABCDEFGHKMNPRSTVWXZ#%&/<>{}[]010', keep=c=>c===' '||c==='.';
-  let f=0;
-  const run=()=>{
-    let out='';
-    for(let i=0;i<final.length;i++) out+= keep(final[i]) ? final[i] : (i<f/2.4 ? final[i] : chars[Math.random()*chars.length|0]);
-    em.textContent=out; f++;
-    if(f/2.4<final.length) setTimeout(run,34); else em.textContent=final;
-  };
-  setTimeout(run,420);
-})();
-
-/* — kinetic headings — split into word-masks (preserves <em>/<span> children) — */
-(()=>{
-  if(RM)return;
-  const split=root=>{
-    [...root.childNodes].forEach(node=>{
-      if(node.nodeType===3){ /* text → wrap each word in a mask */
-        const frag=document.createDocumentFragment();
-        node.textContent.split(/(\s+)/).forEach(tok=>{
-          if(tok.trim()===''){frag.append(tok);return;}
-          const mask=document.createElement('span'); mask.className='kin';
-          const inner=document.createElement('span'); inner.textContent=tok;
-          mask.append(inner); frag.append(mask);
-        });
-        node.replaceWith(frag);
-      }else if(node.nodeType===1 && !node.classList.contains('idx') && !node.hasAttribute('data-decode')){ /* recurse into <em> etc. */
-        split(node);
-      }
-    });
-  };
-  document.querySelectorAll('.shead h2,.contact h2').forEach(h=>{
-    split(h);
-    /* stagger the reveal of each word */
-    h.querySelectorAll('.kin>span').forEach((s,i)=>s.style.transitionDelay=(i*.05)+'s');
-  });
-})();
-
-/* — living neural-network hero canvas (AI-infrastructure motif) — */
-(()=>{
-  const cv=document.getElementById('net'); if(!cv||RM)return;
-  const ctx=cv.getContext('2d');
-  let w=0,h=0,dpr=1,nodes=[],mouse={x:-999,y:-999},raf=0,running=false;
-  const count=()=>Math.min(Math.round(innerWidth/24),68);
-  const resize=()=>{dpr=Math.min(devicePixelRatio||1,2);const r=cv.getBoundingClientRect();w=r.width;h=r.height;cv.width=w*dpr;cv.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);};
-  const init=()=>{resize();nodes=[];for(let i=0,n=count();i<n;i++)nodes.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22});};
-  const step=()=>{
-    ctx.clearRect(0,0,w,h);
-    for(let i=0;i<nodes.length;i++){
-      const a=nodes[i];
-      a.x+=a.vx;a.y+=a.vy;
-      if(a.x<0||a.x>w)a.vx*=-1; if(a.y<0||a.y>h)a.vy*=-1;
-      for(let j=i+1;j<nodes.length;j++){
-        const b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);
-        if(d<128){ctx.strokeStyle='rgba(212,163,90,'+(1-d/128)*.16+')';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
-      }
-      const mdx=a.x-mouse.x,mdy=a.y-mouse.y,md=Math.hypot(mdx,mdy);
-      if(md<170){
-        ctx.strokeStyle='rgba(233,193,136,'+(1-md/170)*.45+')';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(mouse.x,mouse.y);ctx.stroke();
-        a.vx+=(mouse.x-a.x)*4e-5;a.vy+=(mouse.y-a.y)*4e-5;
-      }
-      a.vx=Math.max(-.6,Math.min(.6,a.vx));a.vy=Math.max(-.6,Math.min(.6,a.vy));
-    }
-    ctx.fillStyle='rgba(233,193,136,.5)';
-    for(const p of nodes){ctx.beginPath();ctx.arc(p.x,p.y,1.5,0,7);ctx.fill();}
-    raf=requestAnimationFrame(step);
-  };
-  const start=()=>{if(!running){running=true;step();}};
-  const stop=()=>{running=false;cancelAnimationFrame(raf);};
-  addEventListener('mousemove',e=>{const r=cv.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top;},{passive:true});
-  addEventListener('mouseout',()=>{mouse.x=mouse.y=-999;});
-  let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{init();if(running){running=false;start();}},200);});
-  init(); start();
-  new IntersectionObserver(es=>{es[0].isIntersecting?start():stop();},{threshold:0}).observe(document.getElementById('hero'));
-})();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/resume-gate.js" defer></script>
 </body>
 </html>
